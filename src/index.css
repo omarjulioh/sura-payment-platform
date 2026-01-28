@@ -1,0 +1,118 @@
+* {
+  font-family: "FSJoey",sans-serif;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./Assets/Fonts/Barlow-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FSJoey';
+  src: url('./Assets/Fonts/FSJoey-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FSJoey';
+  src: url('./Assets/Fonts/FSJoey-Light.woff2') format('woff2');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FSJoey';
+  src: url('./Assets/Fonts/FSJoey-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./Assets/Fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input, select, textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+/* Chrome / Safari */
+select {
+  -webkit-appearance: none; /* para Safari/Chrome */
+  appearance: none;          /* estándar */
+}
+
+/* Firefox */
+select {
+  -moz-appearance: none;
+}
+
+/* IE/Edge */
+select:-ms-expand {
+  display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}

@@ -1,0 +1,263 @@
+.xPayment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.xPaymentSectionA {
+    width: 96%;
+    height: auto;
+}
+
+.xPaymentSectionA > div:nth-of-type(1) {
+    width: 100%;
+    height: 2rem;
+    background-color: #0033a0;
+    border: 1px solid #0033a0;
+    font-size: .75rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xPaymentSectionA > div:nth-of-type(2) {
+    width: 100%;
+    border: 1px solid #0033a0;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.xPaymentSectionA > div:nth-of-type(2) > p {
+    color: #0033a0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.xPaymentSectionA > div:nth-of-type(2) > form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.xPaymentSectionA > form > div {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.xPaymentSectionA > div:nth-of-type(2) > form > div {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.xPaymentSectionA > div:nth-of-type(2) > button {
+    background-color: #e3e829;
+    color: #0033a0;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 7.5625rem;
+    padding: 1rem .625rem;
+    border: .0625rem solid transparent;
+    align-self: center;
+}
+
+.xPaymentSectionB {
+    width: 96%;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    position: relative;
+    padding: 1rem;
+}
+
+.xPaymentSectionB > h3 {
+    width: 100%;
+    color: #0033a0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #bebebe;
+}
+
+.xPaymentSectionB > ul {
+    width: 100%;
+    color: #0033a0;
+    font-weight: 500;
+    border-bottom: 1px solid #bebebe;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.xPaymentSectionB > ul > li > span {
+    color: #bebebe;
+}
+
+.xPaymentSectionB > p {
+    color: #0033a0;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.xPaymentSectionC {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.xPaymentSectionC > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    row-gap: .75rem;
+}
+
+.xPaymentSectionC > form > div {
+    position: relative;
+    height: 42px;
+    width: 75%;
+}
+
+.xPaymentSectionC > form > div > input {
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    background-color: #fff;
+    border: .0625rem solid #d2d2d2;
+    outline: none;
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+    padding-top: .25rem;
+    transition: top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            font-size 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xPaymentSectionC > form > div > label {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            font-size 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xPaymentSectionC > form > div input:focus + label,
+.xPaymentSectionC > form > div input:not(:placeholder-shown) + label {
+    width: auto;
+    top: .25px;
+    left: .5rem;
+    font-size: .75rem;
+    background: #fff;
+    padding: .5rem 0.5rem .1rem .5rem;
+}
+
+.xPaymentSectionC > form > div > input:valid {
+    border-color: #00aec7;
+}
+
+.xPaymentSectionC > form > div > input:valid + label {
+    color: #00aec7;
+}
+
+.xPaymentSectionC > form > div > input:invalid:not(:placeholder-shown) {
+    border-color: #e4002b;
+}
+
+.xPaymentSectionC > form > div > input:invalid:not(:placeholder-shown) + label {
+    color: #e4002b;
+}
+
+.xPaymentSectionC > form > div > input.touched:invalid {
+    border-color: #e4002b;
+}
+.xPaymentSectionC > form > div > input.touched:invalid + label {
+    color: #e4002b;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    object-fit: contain;
+}
+
+.xPaymentCompleted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .5rem;
+}
+
+.xPaymentCompleted > h4 {
+    color: #0033a0;
+    font-weight: 600;
+}
+
+.xPaymentCompleted > p {
+    margin: 0;
+    color: #bebebe !important;
+}
+
+.xPaymentCompleted > p > span {
+    color: #0033a0;
+    cursor: pointer;
+}
+
+.xPaymentCompleted > button {
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    
+    .xPaymentSectionA {
+        width: 570px;
+    }
+    .xPaymentSectionB {
+        width: 570px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .xPayment {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        column-gap: 2rem;
+        padding-bottom: 3rem;
+    }
+    .xPayment > * {
+        width: 50%;
+    }
+    .xPaymentSectionA {
+        width: 350px;
+    }
+    .xPaymentSectionB {
+        width: 350px;
+    }
+}

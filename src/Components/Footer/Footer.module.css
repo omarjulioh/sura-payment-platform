@@ -1,0 +1,15 @@
+.xFooter {
+    width: 100%;
+    height: auto;
+    background: #53565A;
+    color: #fff;
+    padding: 2rem 0px;
+    text-align: center;
+}
+
+.xFooter > p {
+    cursor: pointer;
+    font-size: 0.81rem;
+    font-weight: bolder;
+    line-height: 1.5;
+}

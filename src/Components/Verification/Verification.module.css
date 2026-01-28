@@ -1,0 +1,309 @@
+.xVerificationMain {
+    width: 100%;
+    height: auto;
+    padding: 1rem 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.xVerificationMainSectionA {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.xVerificationMainSectionA > div {
+    width: 100%;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    position: relative;
+    padding: 1rem 1.5rem;
+}
+
+.xVerificationMainSectionA > div > h5 {
+    position: absolute;
+    left: 8px;
+    top: -16px;
+    background-color: #fff;
+    padding: .5rem;
+    color: #727272;
+    font-size: 14px;
+}
+
+.xVerificationMainSectionA > div > p {
+    width: 100%;
+    height: 21px;
+    margin: 0;
+    color: #727272;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.xVerificationMainSectionB {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+}
+
+.xVerificationMainSectionB > h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0033a0;
+    padding-bottom: 1rem;
+    border-bottom: .125rem solid #eff0f1;
+}
+
+.xVerificationMainSectionB > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.xVerificationMainSectionB > form > div {
+    position: relative;
+}
+
+.xVerificationMainSectionB > form > div > select,
+.xVerificationMainSectionB > form > div > input {
+    width: 92vw;
+    height: 42px;
+    background: #fff;
+    border: .0625rem solid #d2d2d2;
+    outline: none;
+    color: #000;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    transition: top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            font-size 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xVerificationMainSectionB > form > div > label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    pointer-events: none;
+    transition: top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            font-size 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+            color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xVerificationMainSectionB > form > div input:focus + label,
+.xVerificationMainSectionB > form > div select:focus + label,
+.xVerificationMainSectionB > form > div input:not(:placeholder-shown) + label,
+.xVerificationMainSectionB > form > div select:valid + label {
+    top: 1.2px;
+    left: .5rem;
+    font-size: .75rem;
+    background: #fff;
+    padding: .5rem .5rem 0.25rem .5rem;
+}
+
+.xVerificationMainSectionB > form > div input:valid,
+.xVerificationMainSectionB > form > div select:valid {
+    border-color: #00aec7;
+}
+
+.xVerificationMainSectionB > form > div input:valid + label,
+.xVerificationMainSectionB > form > div select:valid + label {
+    color: #00aec7;
+}
+
+.xVerificationMainSectionB > form > div input:invalid:not(:placeholder-shown),
+.xVerificationMainSectionB > form > div select.touched:invalid {
+    border-color: #e4002b;
+}
+
+.xVerificationMainSectionB > form > div input:invalid:not(:placeholder-shown) + label,
+.xVerificationMainSectionB > form > div select.touched:invalid + label {
+    color: #e4002b;
+}
+
+.xVerificationMainSectionB > form > div input.touched:invalid,
+.xVerificationMainSectionB > form > div select.touched:invalid {
+    border-color: #e4002b;
+}
+
+.xVerificationMainSectionB > form > div input.touched:invalid + label,
+.xVerificationMainSectionB > form > div select.touched:invalid + label {
+    color: #e4002b;
+}
+
+.xVerificationMainSectionB > div {
+    width: 92vw;
+    height: 102px;
+    display: flex;
+    background-color: #e0eaff;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #5e85d8;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.xVerificationMainSectionB > div > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.xVerificationMainSectionB > div > p {
+    width: 85%;
+    height: 84px;
+    color: #0033a0;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 21px;
+    letter-spacing: 0rem;
+    margin: 0;
+}
+
+.xVerificationMainSectionC {
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.xVerificationMainSectionC > div {
+    width: 100%;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    position: relative;
+    padding: 1rem;
+}
+
+.xVerificationMainSectionC > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #727272;
+}
+
+.xVerificationMainSectionC > div > div:nth-of-type(2) {
+    color: #0033a0;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.xVerificationMainSectionC > button {
+    width: 192px;
+    height: 57px;
+    cursor: pointer;
+    background-color: #e3e829;
+    font-size: 1.375rem;
+    color: #0033a0;
+    border-radius: 3.125rem;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    
+    .xVerificationMainSectionA {
+        width: 570px;
+    }
+    .xVerificationMainSectionA > div {
+        width: 570px;
+    }
+    .xVerificationMainSectionA{
+        display: flex;
+        justify-content: center;
+    }
+    .xVerificationMainSectionB {
+        width: 570px;
+    }
+    .xVerificationMainSectionB > form > div > select,
+    .xVerificationMainSectionB > form > div > input {
+        width: 570px;
+    }
+    .xVerificationMainSectionB > div {
+        width: 570px;
+        height: 60px;
+    }
+    .xVerificationMainSectionB > div > img {
+        margin-right: .5rem;
+    }
+    .xVerificationMainSectionB > div > p {
+        height: 42px;
+    }
+    .xVerificationMainSectionC {
+        width: 570px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .xVerificationMain {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        column-gap: 2rem;
+        padding-bottom: 3rem;
+    }
+    .xVerificationMain > * {
+        width: 33.33%;
+    }
+    .xVerificationMainSectionA {
+        width: 290px;
+    }
+    .xVerificationMainSectionA > div {
+        width: 290px;
+    }
+    .xVerificationMainSectionA{
+        display: flex;
+        justify-content: center;
+    }
+    .xVerificationMainSectionB {
+        width: 290px;
+        margin-top: 0;
+    }
+    .xVerificationMainSectionB > form > div > select,
+    .xVerificationMainSectionB > form > div > input {
+        width: 290px;
+    }
+    .xVerificationMainSectionB > div {
+        width: 290px;
+        height: 123px;
+    }
+    .xVerificationMainSectionB > div > img {
+        margin-right: .5rem;
+    }
+    .xVerificationMainSectionB > div > p {
+        height: 105px;
+    }
+    .xVerificationMainSectionC {
+        width: 290px;
+        margin-top: 0;
+    }
+}
